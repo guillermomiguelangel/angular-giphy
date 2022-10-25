@@ -1,0 +1,10 @@
+<div class="p-3 bg-dark min-vh-100 position-sticky">
+    <h3 class="text-light">Gifs App</h3>
+    <div class="list-group">
+        <a *ngFor="let item of historial"
+            (click)="buscar(item)"
+            href="#" class="list-group-item list-group-item-action animate__animated animate__fadeIn">
+            {{ item | titlecase }}
+        </a>
+    </div>
+</div>
